@@ -1,0 +1,9 @@
+T-Test Results:
+time: p-value = 6.9933737121735515e-276
+place: p-value = 6.373314593734271e-228
+manner: p-value = 1.4883890016125663e-105
+cause: p-value = 5.4656730263221995e-21
+effect: p-value = 1.83566217539018e-27
+condition: p-value = 8.273200572056296e-16
+purpose: p-value = 1.4944609139776856e-18
+concession: p-value = 2.6784763948406487e-41

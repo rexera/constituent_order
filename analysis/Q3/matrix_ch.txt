@@ -1,0 +1,84 @@
+                <time>   <place>  <manner>   <cause>  <effect>  <condition>  \
+<time>        0.117249  0.425592  0.391206  0.010710  0.025930     0.007328
+<place>       0.237140  0.148663  0.544753  0.009259  0.023663     0.007716
+<manner>      0.211634  0.265264  0.435644  0.007013  0.028465     0.011139
+<cause>       0.241935  0.241935  0.387097  0.016129  0.048387     0.000000
+<effect>      0.277027  0.290541  0.297297  0.020270  0.027027     0.027027
+<condition>   0.157895  0.184211  0.447368  0.026316  0.105263     0.013158
+<purpose>     0.182927  0.170732  0.500000  0.000000  0.085366     0.048780
+<concession>  0.229167  0.236111  0.368056  0.013889  0.034722     0.048611
+
+              <purpose>  <concession>
+<time>         0.012401      0.009583
+<place>        0.009774      0.019033
+<manner>       0.017739      0.023102
+<cause>        0.032258      0.032258
+<effect>       0.033784      0.027027
+<condition>    0.052632      0.013158
+<purpose>      0.000000      0.012195
+<concession>   0.013889      0.055556
+
+<place> -> <manner>: 0.545
+<purpose> -> <manner>: 0.500
+<condition> -> <manner>: 0.447
+<manner> -> <manner>: 0.436
+<time> -> <place>: 0.426
+<time> -> <manner>: 0.391
+<cause> -> <manner>: 0.387
+<concession> -> <manner>: 0.368
+<effect> -> <manner>: 0.297
+<effect> -> <place>: 0.291
+<effect> -> <time>: 0.277
+<manner> -> <place>: 0.265
+<cause> -> <time>: 0.242
+<cause> -> <place>: 0.242
+<place> -> <time>: 0.237
+<concession> -> <place>: 0.236
+<concession> -> <time>: 0.229
+<manner> -> <time>: 0.212
+<condition> -> <place>: 0.184
+<purpose> -> <time>: 0.183
+<purpose> -> <place>: 0.171
+<condition> -> <time>: 0.158
+<place> -> <place>: 0.149
+<time> -> <time>: 0.117
+<condition> -> <effect>: 0.105
+<purpose> -> <effect>: 0.085
+<concession> -> <concession>: 0.056
+<condition> -> <purpose>: 0.053
+<purpose> -> <condition>: 0.049
+<concession> -> <condition>: 0.049
+<cause> -> <effect>: 0.048
+<concession> -> <effect>: 0.035
+<effect> -> <purpose>: 0.034
+<cause> -> <purpose>: 0.032
+<cause> -> <concession>: 0.032
+<manner> -> <effect>: 0.028
+<effect> -> <effect>: 0.027
+<effect> -> <condition>: 0.027
+<effect> -> <concession>: 0.027
+<condition> -> <cause>: 0.026
+<time> -> <effect>: 0.026
+<place> -> <effect>: 0.024
+<manner> -> <concession>: 0.023
+<effect> -> <cause>: 0.020
+<place> -> <concession>: 0.019
+<manner> -> <purpose>: 0.018
+<cause> -> <cause>: 0.016
+<concession> -> <cause>: 0.014
+<concession> -> <purpose>: 0.014
+<condition> -> <condition>: 0.013
+<condition> -> <concession>: 0.013
+<time> -> <purpose>: 0.012
+<purpose> -> <concession>: 0.012
+<manner> -> <condition>: 0.011
+<time> -> <cause>: 0.011
+<place> -> <purpose>: 0.010
+<time> -> <concession>: 0.010
+<place> -> <cause>: 0.009
+<place> -> <condition>: 0.008
+<time> -> <condition>: 0.007
+<manner> -> <cause>: 0.007
+<cause> -> <condition>: 0.000
+<purpose> -> <cause>: 0.000
+<purpose> -> <purpose>: 0.000

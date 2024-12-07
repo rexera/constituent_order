@@ -2,7 +2,7 @@
 
 > 大模型驱动的英汉新闻成分序偏好差异分析
 
-A casual **source code & raw results** archive repository for the term paper of Corpus Linguistics course at BUPT, 2024 Fall, just for a rainy day.
+A casual **source code & raw results** archive repository for the term paper of both _Corpus Linguistics (语料库语言学)_ and _Contrastive Linguistics (英汉语言对比)_ course at BUPT, 2024 Fall, just for a rainy day.
 
 Corpora by:
 

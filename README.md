@@ -1,6 +1,6 @@
-# LLM-Driven Analysis of English-Chinese Differences in News on Constituent Order Preferences Within Adverbial Function
+# LLM-Driven Contrastive Analysis of English-Chinese Constituent Order Preferences Within Adverbial Function in News
 
-> 大模型驱动的英汉新闻状语功能成分序偏好差异分析
+> 大模型驱动的英汉新闻状语功能成分序偏好对比
 
 A casual **source code & raw results** archive repository for the term paper for both _Corpus Linguistics (语料库语言学)_ and _Contrastive Linguistics (英汉语言对比)_ course at BUPT, 2024 Fall, just for a rainy day.
 

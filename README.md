@@ -1,4 +1,4 @@
-# LLM-Driven Contrastive Analysis of English-Chinese Constituent Order Preferences Within Adverbial Function in News
+# Contrastive Analysis of Constituent Order Preferences Within Adverbial Roles in English and Chinese News: A Large-Language-Model-Driven Approach
 
 > 大模型驱动的英汉新闻状语功能成分序偏好对比
 
@@ -9,7 +9,7 @@ Corpora by:
 > 李佳蕾、孙铭辰、许家金，2022，ToRCH2019现代汉语平衡语料库。北京外国语大学中国外语与教育研究中心。
 > Mingchen Sun, Jiajin Xu et al. 2022. The CROWN2021 Corpus. National Research Centre for Foreign Language Education, Beijing Foreign Studies University
 
-Code by me and ChatGPT. 🤪
+Code by me and ChatGPT/Github Copilot. 🤪
 
 Camera-ready paper (lol) is in `paper` directory and was originally in Chinese. A crude English translation is also provided in said directory, with no effort spent on language polishing for just making it readable for any non-Chinese speaker.
 

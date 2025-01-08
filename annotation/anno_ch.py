@@ -6,7 +6,7 @@ import json
 
 # 初始化 OpenAI 客户端
 client = OpenAI()
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-4o"
 
 # 读取文件并以换行符分句
 def read_and_split_txt(file_path):
@@ -124,7 +124,6 @@ prompt_template = """
 注意：可能会有无主语或无宾语的情况，这时候只需要标注<V><O>或<S><V>即可。
 无法判断出来的成分，请尽量在标签中选择一个来标注，**禁止随意删除原句中的任何一个字。**
 不允许随意删除原句中的任何一个字。请保留原句中的语序。**禁止为了方便标注而篡改原句语序**
-禁止把所有句子都改成S开头！我不需要你把所有句子都改成S开头！千万不要这么做。
 
 
 例子1：
@@ -141,7 +140,6 @@ prompt_template = """
 
 <effect>“ 总揽 全局 、 内涵 丰富 、 思想 深邃 ” </effect>， <time>连日来</time> ， <S>习近平 总书记在 中央 政法 工作会议 上 的 重要 讲话</S> <place>在 全国 公安机关 基层 民警 中</place> <V>引发</V> <manner>热烈</manner> <O>反响</O> 。
 
-不允许删除这里的：“ 总揽 全局 、 内涵 丰富 、 思想 深邃 ”，连日来，。必须标注。
 
 无主语句如：
 
@@ -153,13 +151,11 @@ prompt_template = """
 
 <time>端午小长假</time>，<place>山东枣庄台儿庄</place><S>游人</S><manner>如织</manner><V>徜徉</V><place>在大运河畔</place>。
 
-禁止删去：“端午 小 长假 ， 山东 枣庄 台儿庄 ”！！！！！
-
 """
 
 # 设置输入、输出文件夹和参数
-input_folder = "/Users/mayiran/PycharmProjects/linguistics/corpora/ToRCH2019/ToRCH2019_V1.5/A"
-output_file = "/Users/mayiran/PycharmProjects/linguistics/ch_annotated.txt"
+input_folder = "/Users/mayiran/PycharmProjects/constituent_order/demo"
+output_file = "/Users/mayiran/PycharmProjects/constituent_order/demo/ch_annotated.txt"
 batch_size = 10
 start_file_index = 0
 

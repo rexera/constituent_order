@@ -2,17 +2,121 @@
 
 > 大模型驱动的英汉新闻状语功能成分序偏好对比
 
-A casual **source code & raw results** archive repository for the term paper for both _Corpus Linguistics (语料库语言学)_ and _Contrastive Linguistics (英汉语言对比)_ course at BUPT, 2024 Fall, just for a rainy day.
+This repository contains source code and research data for a term paper submitted to the _Corpus Linguistics (语料库语言学)_ and _Contrastive Linguistics (英汉语言对比)_ courses at Beijing University of Posts and Telecommunications, 2024 Fall.
 
-Corpora by:
+## Data Sources
 
-> 李佳蕾、孙铭辰、许家金，2022，ToRCH2019现代汉语平衡语料库。北京外国语大学中国外语与教育研究中心。
-> Mingchen Sun, Jiajin Xu et al. 2022. The CROWN2021 Corpus. National Research Centre for Foreign Language Education, Beijing Foreign Studies University
+The research utilizes the following corpora:
 
-Code by me and ChatGPT/Github Copilot. 🤪
+- ToRCH2019 Modern Chinese Balanced Corpus (李佳蕾、孙铭辰、许家金，2022，ToRCH2019现代汉语平衡语料库。北京外国语大学中国外语与教育研究中心)
+- The CROWN2021 Corpus (Mingchen Sun, Jiajin Xu et al. 2022. National Research Centre for Foreign Language Education, Beijing Foreign Studies University)
 
-Camera-ready paper (lol) is in `paper` directory and was originally in Chinese. A crude English translation is also provided in said directory, with no effort spent on language polishing for just making it readable for any non-Chinese speaker.
+## Repository Overview
 
-Since no one would ever reproduce this, I'm not going to provide any instructions and final organization on the code itself and how to run the code. If interested, you're more than welcomed to contact me via email. [See my profile page here!](https://rexera.github.io/about/)
+The research paper is available in the `paper` directory, presented in both Chinese (original) and English (translated version). The English translation aims to provide accessibility to non-Chinese speakers while maintaining the core academic content.
 
-...and there's probably no one interested in citing this work I guess? But if you do, please e-mail me. Beyond thanks!
+## Components
+
+The analysis was implemented through three main modules:
+
+### 1. Annotation Module
+- Utilizes GPT-4o for automated functional block annotation
+- Implements robust sentence splitting with handling for abbreviations and special cases
+- Processes both English and Chinese corpora in batches for efficiency
+- Includes quality control measures through post-processing scripts
+
+### 2. Statistical Analysis Module
+- Analyzes three main research questions:
+  - Q1: Distribution preferences of functional blocks
+  - Q2: Patterns in SVO-functional block combinations
+  - Q3: Multiple functional block ordering patterns
+- Employs chi-square tests and t-tests for significance testing
+- Utilizes conditional probability matrices for transition analysis
+
+### 3. Semantic Analysis Module
+- Uses MiniCPM-Embedding model for semantic feature extraction
+- Implements dimensionality reduction through t-SNE
+- Analyzes semantic similarities between functional blocks
+- Explores semantic influence on word order preferences
+
+## Setup
+
+1. Create and activate a conda environment:
+```bash
+conda create -n constituent_order python=3.11
+conda activate constituent_order
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+
+## Usage
+
+### Data Annotation & Processing
+1. Configure OpenAI API key in `.env`
+2. Run annotation scripts:
+```python
+python annotation/anno_en.py  # English corpus
+python annotation/anno_ch.py  # Chinese corpus
+```
+3. Post-process and extract patterns:
+```python
+python annotation/post_ch.py  # Process Chinese annotations
+python annotation/post_en.py  # Process English annotations
+python annotation/extract.py  # Extract abstract patterns
+python analysis/relative_position.py  # Convert to relative positions
+
+# Then mannually copy-paste the terminal output to /analysis/ch.txt or en.txt (hereafter referred to as relative position files)
+```
+
+> Refer to `demo` directory for more detailed examples.
+
+### Analysis Pipeline
+1. **Q1: Distribution preferences**
+```python
+python analysis/histogram.py  # Distribution visualization
+python analysis/chi.py  # Statistical tests for intralingual comparison
+python analysis/t_test.py  # Statistical tests for interlingual comparison
+```
+- Input: Relative position files
+- Output: Relative position distributions, statistical test results
+
+2. **Q2: SVO-functional block patterns**
+```python
+python analysis/Q2/count_and_patterns/
+```
+- Input: Relative position files
+- Output: Pattern frequencies, conditional probability
+
+3. **Q3: Multiple block ordering**
+```python
+python analysis/markov.py  # Transition probability calculation
+python analysis/heatmap.py  # Visualization
+```
+- Input: Relative position files
+- Output: Transition matrices, combination patterns
+
+4. **Semantic Analysis**
+```python
+# Q1: Compare overall corpus semantics and time-SVO vs. SVO-time patterns
+python analysis/semantics/1/embed.py  # Generate embeddings
+python analysis/semantics/1/1.py  # Calculate and visualize
+
+# Q2: Compare functional block semantics between languages
+python analysis/semantics/2/embed.py  # Generate embeddings
+python analysis/semantics/2/2.py  # Calculate and visualize
+```
+- Input: Relative position files
+- Output: Semantic similarity matrices, visualization plots
+
+
+## Contact
+
+For inquiries regarding code implementation or research reproduction, please contact the author via email. Contact information is available on my [personal website](https://rexera.github.io/about/).
+
+## Citation
+
+If you find this research or codeuseful for your work, feel free to star this repository. If ultimately necessary, contact me for proper citation information for this toy project for a course paper. :)

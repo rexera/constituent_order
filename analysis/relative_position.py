@@ -28,5 +28,5 @@ def calculate_adverbial_relative_positions(input_file):
         print(f"Sample Size for {tag}: {len(positions)}")
 
 # Usage example
-input_file = '/Users/mayiran/PycharmProjects/linguistics/en_final.txt'
+input_file = '/Users/mayiran/PycharmProjects/constituent_order/demo/extracted_patterns_ch.txt'
 calculate_adverbial_relative_positions(input_file)

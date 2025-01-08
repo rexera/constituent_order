@@ -30,6 +30,6 @@ def extract_patterns_per_sentence(input_file, output_file):
     print(f'Valid lines: {valid_line_count}')
 
 # Usage example
-input_file = 'en_annotated.txt'
-output_file = 'extracted_patterns_en.txt'
+input_file = '/Users/mayiran/PycharmProjects/constituent_order/demo/ch_annotated.txt'
+output_file = '/Users/mayiran/PycharmProjects/constituent_order/demo/extracted_patterns_ch.txt'
 extract_patterns_per_sentence(input_file, output_file)

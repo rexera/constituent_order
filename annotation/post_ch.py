@@ -1,8 +1,8 @@
 import re
 
 # Define input and output file paths
-input_file_path = '/Users/mayiran/PycharmProjects/linguistics/extracted_patterns_en.txt'
-output_file_path = '/Users/mayiran/PycharmProjects/linguistics/en_final.txt'
+input_file_path = '/Users/mayiran/PycharmProjects/constituent_order/demo/extracted_patterns_ch.txt'
+output_file_path = '/Users/mayiran/PycharmProjects/constituent_order/demo/ch_final.txt'
 
 # Read file content
 with open(input_file_path, 'r') as file:

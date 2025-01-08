@@ -6,7 +6,7 @@ import json
 
 # 初始化 OpenAI 客户端
 client = OpenAI()
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-4o"
 
 # 读取文件并分句，改进的分句策略
 def read_and_split_txt(file_path):
@@ -169,7 +169,6 @@ directly in the sentence, in **one line**, using these tags. 一次生成在一�
 注意：可能会有无主语或无宾语的情况，这时候只需要标注<V><O>或<S><V>即可。
 无法判断出来的成分，请尽量在标签中选择一个来标注，**禁止随意删除原句中的任何一个字。**
 不允许随意删除原句中的任何一个字。请保留原句中的语序。**禁止为了方便标注而篡改原句语序**
-禁止把所有句子都改成S开头！我不需要你把所有句子都改成S开头！千万不要这么做。
 
  For example:
  
@@ -187,8 +186,6 @@ Congressional Democrats are united behind sweeping voting rights legislation tha
  But on one sliver of voting issues, it seems lawmakers might — might! — be able to agree.
  
  <condition>But on one sliver of voting issues</condition>, <S>it</S> <V>seems lawmakers might — might! — be able</V> <effect>to agree</effect>
-
- 禁止删去But on one sliver of voting issues, it seems ！！！
  
 """
 

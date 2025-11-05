@@ -1,14 +1,12 @@
 # Contrastive Analysis of Constituent Order Preferences Within Adverbial Roles in English and Chinese News: A Large-Language-Model-Driven Approach
 
-> 大模型驱动的英汉新闻状语功能成分序偏好对比
-
-This repository contains source code and research data for a term paper submitted to the _Corpus Linguistics (语料库语言学)_ and _Contrastive Linguistics (英汉语言对比)_ courses at Beijing University of Posts and Telecommunications, 2024 Fall.
+[![arXiv](https://img.shields.io/badge/arXiv-2508.06110-b31b1b.svg)](https://arxiv.org/abs/2508.14054)
 
 ## Data Sources
 
 The research utilizes the following corpora:
 
-- ToRCH2019 Modern Chinese Balanced Corpus (李佳蕾、孙铭辰、许家金，2022，ToRCH2019现代汉语平衡语料库。北京外国语大学中国外语与教育研究中心)
+- ToRCH2019 Modern Chinese Balanced Corpus (李佳蕾、孫銘辰、許家金，2022，ToRCH2019現代漢語平衡語料庫。北京外國語大學中國外語與教育研究中心)
 - The CROWN2021 Corpus (Mingchen Sun, Jiajin Xu et al. 2022. National Research Centre for Foreign Language Education, Beijing Foreign Studies University)
 
 ## Repository Overview

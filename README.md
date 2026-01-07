@@ -109,12 +109,3 @@ python analysis/semantics/2/2.py  # Calculate and visualize
 ```
 - Input: Relative position files
 - Output: Semantic similarity matrices, visualization plots
-
-
-## Contact
-
-For inquiries regarding code implementation or research reproduction, please contact the author via email. Contact information is available on my [personal website](https://rexera.github.io/about/).
-
-## Citation
-
-If you find this research or codeuseful for your work, feel free to star this repository. If ultimately necessary, contact me for proper citation information for this toy project for a course paper. :)
